@@ -14,7 +14,7 @@ st.set_page_config(
 
 # --- Configuration ---
 BASE_RESULTS_PATH = Path(
-    "/home/amine.andam/lustre/vr_outsec-vh2sz1t4fks/users/amine.andam/epymarl/results/attacks"
+    "epymarl/results/attacks"
 )
 
 class MARLDataLoader:
@@ -167,7 +167,7 @@ def main():
             })
         rows.append(record)
     table = pd.DataFrame(rows)
-    table.to_csv(f"/home/amine.andam/lustre/vr_outsec-vh2sz1t4fks/users/amine.andam/epymarl/src/{selected_algo}-{selected_env}.csv")
+    table.to_csv(f"epymarl/src/{selected_algo}-{selected_env}.csv")
     st.dataframe(table, use_container_width=True, height=400)
     # Plot
     st.subheader("IQM Return vs Epsilon: Baseline vs Align vs Max-Noise vs Whitebox")
