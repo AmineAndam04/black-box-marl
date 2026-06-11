@@ -33,7 +33,6 @@ def get_latest_run( base_path,algo, env):
 
     return latest_folder
 if __name__ == "__main__":
-    #base_dir = "/home/amine.andam/lustre/vr_outsec-vh2sz1t4fks/users/amine.andam/epymarl/results/models"
     algo = "qmix"
     env = "zerg_20_vs_20"
     base_path = os.path.join(dirname(dirname(__file__)),"results","models")
